@@ -28,7 +28,6 @@ abstract contract BaseTestRunner is MinimalTestRunner, Oracles {
   // Users array for multi-user tests
   address[] users;
 
-
   /*//////////////////////////////////////////////////////////////
                              Helpers
   //////////////////////////////////////////////////////////////*/
