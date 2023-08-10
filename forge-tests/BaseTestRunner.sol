@@ -29,31 +29,6 @@ abstract contract BaseTestRunner is MinimalTestRunner, Oracles {
   address[] users;
 
   /*//////////////////////////////////////////////////////////////
-                            KYC Registry
-  //////////////////////////////////////////////////////////////*/
-
-  KYCRegistry registry;
-
-  function _deployKYCRegistry() internal {
-    // Make sure we don't redeploy for multi-token integration tests
-    if (address(registry) == address(0)) {
-      registry = new KYCRegistry(address(this), address(SANCTIONS_ORACLE));
-    }
-  }
-
-  function _addAddressToKYC(uint256 level, address account) internal {
-    address[] memory addressesToKYC = new address[](1);
-    addressesToKYC[0] = account;
-    registry.addKYCAddresses(level, addressesToKYC);
-  }
-
-  function _removeAddressFromKYC(uint256 level, address account) internal {
-    address[] memory addressesToRemoveKYC = new address[](1);
-    addressesToRemoveKYC[0] = account;
-    registry.removeKYCAddresses(level, addressesToRemoveKYC);
-  }
-
-  /*//////////////////////////////////////////////////////////////
                              Helpers
   //////////////////////////////////////////////////////////////*/
 

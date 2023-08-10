@@ -23,15 +23,6 @@ export const PROD_INSTANT_MINTER_ADMIN_USDY =
                           OMMF Constants
   //////////////////////////////////////////////////////////////*/
 
-// Prod Constants = To Set Before Deployment
-export const PROD_GUARDIAN_OMMF = "";
-export const PROD_ASSET_SENDER_OMMF = "";
-export const PROD_FEE_RECIPIENT_OMMF = "";
-export const PROD_PAUSER_OMMF = "";
-export const PROD_MANAGER_ADMIN_OMMF = "";
-export const PROD_INSTANT_MINTER_ADMIN_OMMF = "";
-export const PROD_OMMF_KYC_GROUP = "1";
-
 // Prod deployed contracts
 export const PROD_KYC_REGISTRY = "0x7cE91291846502D50D635163135B2d40a602dc70";
 export const PROD_ORACLE = "0xc53e6824480d976180A65415c19A6931D17265BA";

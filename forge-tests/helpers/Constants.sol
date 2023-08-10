@@ -3,7 +3,7 @@ pragma solidity 0.8.16;
 import "contracts/RWAHub.sol";
 import "contracts/Pricer.sol";
 import "contracts/PricerWithOracle.sol";
-import "contracts/kyc/KYCRegistry.sol";
+import "contracts/sanctions/ISanctionsListClient.sol";
 import "contracts/external/openzeppelin/contracts/token/IERC20.sol";
 
 // Known production mainnet token contracts.
